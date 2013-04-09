@@ -38,57 +38,90 @@
                         <span class="icon-bar"></span>
                     </a>
                     <div class="nav-collapse collapse">
-                        <ul class="nav">
+                        <ul class="nav" role="menu" aria-labelledby="dropdownMenu">
                             <li class="active"><a href="../">Accueil</a></li>
-                            <li><a href="a-propos/">À propos de nous</a></li>
+                            <li class="dropdown">
+                                <a id="a-propos" class="dropdown-toggle" href="#" data-toggle="dropdown" role="button">
+                                    À propos de nous
+                                    <b class="caret"></b>
+                                </a>
+                                <ul id="menu1" class="dropdown-menu" aria-labelledby="a-propos" role="menu">
+                                    <li role="presentation">
+                                        <a href="#" tabindex="-1" role="menuitem">En bref</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#" tabindex="-1" role="menuitem">Les branches</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#" tabindex="-1" role="menuitem">Nos réalisations</a>
+                                    </li>
+                                </ul>
+                            </li>
                             <li><a href="#contact">Projets</a></li>
                             <li><a href="#contact">Impliquez-vous</a></li>
                             <li><a href="#contact">Faites un don</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
-                        <!-- <form class="navbar-form pull-right">
-                            <input class="span2" type="text" placeholder="Email">
-                            <input class="span2" type="password" placeholder="Password">
-                            <button type="submit" class="btn">Sign in</button>
-                        </form> -->
-                    </div><!--/.nav-collapse -->
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="container">
 
-            <!-- Main hero unit for a primary marketing message or call to action -->
             <div class="hero-unit">
-                <h1>Hello, world!</h1>
-                <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-                <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+                <h1>Association Solidarit&eacute; Aquinoise <img src="../img/ASA8.png" width="110" height="79" class="img-rounded"></h1>
+                <p>L'Association Solidarité Aquinoise (ASA) est un organisme à but non lucratif légalement enregistré au Québec. Elle est composée d’un groupe de personnes originaires d’Aquin et de leurs amis, qui ont décidé s’unir pour travailler à l’amélioration des conditions de vie de la population de cette région. </p>
+                <p>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="Z8PHPBHCFL6YJ">
+                    <!-- <input type="image"  src="" class="btn btn-primary btn-large" border="0" name="submit" value="Faire un don" alt="Faire un don"> -->
+                    <input type="submit" value="Faire un don" class="btn btn-primary btn-large" border="0">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/fr_CA/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </p>
             </div>
 
             <!-- Example row of columns -->
             <div class="row">
-                <div class="span4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn" href="#">View details &raquo;</a></p>
+                <div class="span3">
+                    <h4>En bref</h4>
+                    <p> L’arrondissement d'Aquin est situé dans le département du Sud d'Haïti. Depuis 2003, l’association a contribué à la réalisation de grands projets qui ont amélioré sa visibilité auprès des touristes et des autres régions.</p>
+                    <p>Afin de mieux gérer nos projets sur place,  Nous avons créer un nouveau comité à Aquin en 2012 </p>
+                    <p> Aquin a la particularité d'être l'une des plus anciennes villes du pays et même du Nouveau Monde.</p>
+                    <p>Cet établissement qui date de 1492 a été bâti par les Espagnols non loin du site où se trouvait l'agglomération indienne de « Yaquimo », ce qui justifie le nom d'Aquin que les Français lui donnèrent quand la partie est de l'île d'Haïti devint colonie française.</p>
+                    <p><a class="btn" href="#">En savoir plus &raquo;</a></p>
                 </div>
-                <div class="span4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn" href="#">View details &raquo;</a></p>
+                <div class="span3">
+                    <h4>Nos Champs d'activités</h4>
+                    <p>Nos principaux champs d’activité sont la santé et l’éducation, mais nous participons à tout projet susceptible de contribuer au développement durable de la région.</p>
+                    <p>Notre but ultime est d’offrir à la communauté les outils nécessaires à leur autonomie dans le développement de leur région.</p>
                </div>
-                <div class="span4">
-                    <h2>Heading</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <p><a class="btn" href="#">View details &raquo;</a></p>
+                <div class="span3">
+                    <h4>Notre mission</h4>
+                    <p>Mettre en œuvre des projets en collaboration avec divers partenaires pour contribuer au développement économique, social et culturel d’Aquin et ses environs.</p>
+                </div>
+                <div class="span3">
+                    <h4>Nos réalisations</h4>
+                        <ul>
+                            <li>Santé</li>
+                            <li>Éducation</li>
+                            <li>Développement</li>
+                        </ul>
+                    <p><a class="btn" href="#">En savoir plus &raquo;</a></p>
                 </div>
             </div>
 
             <hr>
 
-            <footer>
-                <p>&copy; Company 2012</p>
-            </footer>
+            
+            <div id="footer">
+            
+                <p class="text-center"><br><br><br>(514) 387-3523 &nbsp;&nbsp;|&nbsp;&nbsp; 301-1975 Henri-Bourassa Est, Montréal, Qc, H2B 1S4 &nbsp;&nbsp;|&nbsp;&nbsp; © 2013 by ASA &nbsp;&nbsp;|&nbsp;&nbsp; 
+                 <a href="https://webmail.gandi.net/" target="_blank">Webmail</p>
+              
+            </div>
 
         </div> <!-- /container -->
 
