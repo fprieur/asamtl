@@ -21,6 +21,7 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="js/vendor/jquery-1.9.1.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -57,7 +58,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="#contact">Projets</a></li>
+                            <li><a href="./projets">Projets</a></li>
                             <li><a href="#contact">Impliquez-vous</a></li>
                             <li><a href="#contact">Faites un don</a></li>
                             <li><a href="#contact">Contact</a></li>
@@ -85,32 +86,56 @@
 
             <!-- Example row of columns -->
             <div class="row">
-                <div class="span3">
-                    <h4>En bref</h4>
-                    <p> L’arrondissement d'Aquin est situé dans le département du Sud d'Haïti. Depuis 2003, l’association a contribué à la réalisation de grands projets qui ont amélioré sa visibilité auprès des touristes et des autres régions.</p>
-                    <p>Afin de mieux gérer nos projets sur place,  Nous avons créer un nouveau comité à Aquin en 2012 </p>
-                    <p> Aquin a la particularité d'être l'une des plus anciennes villes du pays et même du Nouveau Monde.</p>
-                    <p>Cet établissement qui date de 1492 a été bâti par les Espagnols non loin du site où se trouvait l'agglomération indienne de « Yaquimo », ce qui justifie le nom d'Aquin que les Français lui donnèrent quand la partie est de l'île d'Haïti devint colonie française.</p>
-                    <p><a class="btn" href="#">En savoir plus &raquo;</a></p>
-                </div>
-                <div class="span3">
-                    <h4>Nos Champs d'activités</h4>
-                    <p>Nos principaux champs d’activité sont la santé et l’éducation, mais nous participons à tout projet susceptible de contribuer au développement durable de la région.</p>
-                    <p>Notre but ultime est d’offrir à la communauté les outils nécessaires à leur autonomie dans le développement de leur région.</p>
-               </div>
-                <div class="span3 mission">
-                    <h4>Notre mission</h4>
-                    <p>Mettre en œuvre des projets en collaboration avec divers partenaires pour contribuer au développement économique, social et culturel d’Aquin et ses environs.</p>
-                </div>
-                <div class="span3">
-                    <h4>Nos réalisations</h4>
-                        <ul>
-                            <li>Santé</li>
-                            <li>Éducation</li>
-                            <li>Développement</li>
-                        </ul>
-                    <p><a class="btn" href="#">En savoir plus &raquo;</a></p>
-                </div>
+                <div class="span12">
+                    <h1>Participez</h1>
+                    <ul class="nav nav-tabs" id="myTab">
+                        <li class="active"><a href="#Benevolat">Benevolat</a></li>
+                        <li><a href="#Organisez">Benevolat</a></li>
+                        <li><a href="#Contribuez">Contribuez</a></li>
+                    </ul>
+                     
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="Benevolat">
+
+                                <div id="myCarousel" class="carousel slide">
+                                <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                                </ol>
+                                <!-- Carousel items -->
+                                <div class="carousel-inner">
+                                <div class="active item"><img src="./img/impliquez-1.jpg"></div>
+                                <div class="item"><img src="./img/impliquez-1.jpg"></div>
+                                <div class="item"><img src="./img/impliquez-1.jpg"></div>
+                                </div>
+                                <!-- Carousel nav -->
+                                <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                                <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                            </div>
+
+
+                            <p>Vous pouvez faire une différence, en donnant votre temps en participant aux activités de développement à Aquin ou à nos collectes de fonds à Montréal.
+                            </p>
+                        </div>
+                        <div class="tab-pane" id="Organisez">
+                            <p>Vous voulez organiser une collecte de fonds pour nous soutenir?</p>
+​                            <p>
+                            Nous pouvons vous aider! Contactez-nous avec vos idées et nous vous donnerons des conseils et de l'information ainsi que l'aide à la conception des publications.</p></div>
+                        <div class="tab-pane" id="Contribuez">
+                            <p> Mettez vos talents à contribution! Jusqu'à présent nous avons bénéficié de l'aide d'ingénieur, d’architecte, de médecins, infirmière et autres.</p> 
+                            <p>Aider nous à faire du développement durable en Haiti .</p></div>
+                    </div>
+                     
+                    <script>
+                        $( document ).ready(function() {
+                            $( "a" ).click(function( event ) {
+                                //alert( "As you can see, the link no longer took you to jquery.com" );
+                                $(this).tab('show');
+                            });
+                        });
+                    </script>
+                <div>
             </div>
 
             <hr>
